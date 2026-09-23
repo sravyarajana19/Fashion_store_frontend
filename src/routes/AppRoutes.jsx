@@ -24,9 +24,9 @@ function AppRoutes() {
      <Route
   path="/products"
   element={
-    <ProtectedRoute>
+    
       <Products />
-    </ProtectedRoute>
+    
   }
 />
 
