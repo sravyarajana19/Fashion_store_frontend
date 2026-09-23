@@ -5,7 +5,7 @@ import {
   addWishlist
 } from "../features/wishlistSlice";
 
-function ProductCard({ product, onDelete }) {
+function ProductCardComp({ product, onDelete }) {
   const dispatch = useDispatch();
 
 function handleWishlist() {
@@ -62,4 +62,4 @@ function handleWishlist() {
   );
 }
 
-export default ProductCard;
+export default ProductCardComp;

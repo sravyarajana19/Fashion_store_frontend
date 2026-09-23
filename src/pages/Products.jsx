@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import api from "../services/api";
 // import ProductCard from "../components/ProductCard";
 import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
+import ProductCardComp from "../components/ProductCardComp";
+// import ProductCard from "../components/ProductCardComp";
 
 function Products() {
 
@@ -197,7 +198,7 @@ function Products() {
 
         {finalProducts.map(product => (
 
-          <ProductCard
+          <ProductCardComp
             key={product.id}
             product={product}
             onDelete={deleteProduct}
